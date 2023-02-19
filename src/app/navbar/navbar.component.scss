@@ -1,0 +1,33 @@
+.nav {
+    width: auto;
+    display: grid;
+    height: 90px;
+    grid-template-columns: 4fr 1fr;
+    margin: 0;
+    padding: 23px 121px 22px 140px;
+    background-color: #313131;
+    align-items: center;
+    .icons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        .custom {
+            background-color: #fff;
+            border-radius: 33px;
+            padding: 0.5rem;
+          }
+      }
+    .CRM {
+        width: 43px;
+        height: 23px;
+        font-family: Lato;
+        font-size: 19px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.21;
+        letter-spacing: normal;
+        text-align: right;
+        color: #fff;
+      }
+  }
