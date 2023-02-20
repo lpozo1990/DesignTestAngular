@@ -251,10 +251,14 @@
     }
 
     .chat {
-        padding: 24px 8px 16px 20px;
         border-radius: 10px;
         box-shadow: 0 23px 31px 0 rgba(0, 0, 0, 0.05);
         background-color: #fff;
+        .header{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 27px;
+        }
     }
 
     .chat .content {
