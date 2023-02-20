@@ -54,6 +54,15 @@
         box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.34);
         background-color: #fff;
         border-radius: 5px;
+        .info{
+            justify-content: flex-start;
+            & > span{
+                margin-right: -4rem;
+            }
+            & span:nth-child(2) {
+                margin: 0 auto;
+            }
+        }
     }
 
     .ticket-content-secondary {
@@ -71,7 +80,17 @@
         padding: 20px 21.5px 20px 21.5px;
         box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.34);
         border-radius: 5px;
-        background-color: #ffffff69
+        background-color: #ffffff69;
+        .info{
+            justify-content: flex-start;
+            & > span{
+                margin-right: -4rem;
+            }
+            & span:nth-child(2) {
+                margin: 0 auto;
+            }
+        }
+        
     }
 
     .info {
