@@ -25,15 +25,16 @@
       [class*="-btn"] {
         border-radius: 5px;
         border: solid 1px #707070;
-        padding: 12px 34px 11px;
+        padding: 0.3rem;
         font-family: Lato;
-        font-size: 16px;
         font-weight: bold;
-        font-stretch: normal;
         font-style: normal;
         line-height: 1.19;
         letter-spacing: normal;
+        font-size: x-small;
         text-align: center;
         color: #313131;
+        width: 68px;
+        background: transparent;
       }
       

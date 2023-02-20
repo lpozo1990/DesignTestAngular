@@ -1,7 +1,19 @@
+:root {
+  --ideal-viewport-width: 1920;
+}
+
+@function scaleValue($value) {
+  @return calc(
+    #{$value} * (clamp(350px, 100vw, 3840px) / var(1920))
+  );
+}
+
+
+
 .nav {
     width: auto;
     display: grid;
-    height: 90px;
+    height: scaleValue(90);
     grid-template-columns: 4fr 1fr;
     margin: 0;
     padding: 23px 121px 22px 140px;
