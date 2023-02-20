@@ -49,12 +49,12 @@
     }
 
     .ticket-content {
-        height: 70%;
-        padding: 20px 21.5px 20px 21.5px;
+        
         box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.34);
         background-color: #fff;
         border-radius: 5px;
         .info{
+            padding: 1rem;
             justify-content: flex-start;
             & > span{
                 margin-right: -4rem;
@@ -66,8 +66,7 @@
     }
 
     .ticket-content-secondary {
-        height: 83%;
-        padding: 20px 21.5px 20px 21.5px;
+        
         box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.34);
         border-radius: 5px;
         border: solid 2px #ffae00;
@@ -75,9 +74,8 @@
     }
 
     .ticket-content-terciary {
-        height: 70%;
 
-        padding: 20px 21.5px 20px 21.5px;
+        
         box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.34);
         border-radius: 5px;
         background-color: #ffffff69;
@@ -96,6 +94,7 @@
     .info {
         display: flex;
         justify-content: space-between;
+        padding: 1rem;
     }
 
     .gray-text {
@@ -276,6 +275,7 @@
 
     .body {
         display: grid;
+        padding: 1rem;
         row-gap: 1.3rem;
     }
 
