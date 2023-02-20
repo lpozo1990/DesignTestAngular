@@ -256,8 +256,11 @@
         background-color: #fff;
         .header{
             display: flex;
-            justify-content: space-between;
             padding: 20px 27px;
+            gap: 1rem;
+            & .ticket-detail{
+                    margin: 0 auto;
+            }
         }
     }
 
