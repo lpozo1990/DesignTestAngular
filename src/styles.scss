@@ -53,3 +53,264 @@ img {
   width: 68px;
   background: transparent;
 }
+
+.chat .line-end {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body {
+  display: grid;
+  padding: 1rem;
+  row-gap: 10px;
+}
+
+.text-99 {
+  padding: 4.3px 10.5px 2.3px 10.5px;
+  border-radius: 13px;
+  background-color: #ffae00;
+  color: #fff;
+}
+
+.text-99-notification {
+  padding: 4.3px 10.5px 2.3px 10.5px;
+  border-radius: 13px;
+  position: absolute;
+  top: -15px;
+  background-color: #f00;
+  color: #fff;
+}
+
+.text-light {
+  font-family: Lato;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: #d6d6de;
+  margin-right: 31px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+.text-dark {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: #313131;
+}
+
+.upload-icon {
+  width: 47px;
+  height: 47px;
+  margin: 0px 15px 0 56px;
+  padding: 10px 8.3px 10.4px 9px;
+  border-radius: 5px;
+  background-color: #a7a7a7;
+}
+
+.send-icon {
+  width: 47px;
+  height: 47px;
+  margin: 0px 0px 0 2px;
+  padding: 3.3px 6.6px 3.3px 0px;
+  border-radius: 5px;
+  background-color: #dddcdf;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 751px 870px 101px;
+  column-gap: 46.5px;
+  grid-template-rows: 84px 1fr;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.title {
+  grid-column: span 3;
+  align-self: center;
+  font-family: Lato;
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  margin: 0px 866px -1px 771px;
+  color: #313131;
+}
+
+.tickets-details {
+  display: grid;
+  grid-template-rows: 67px 245px 204px 207px;
+  margin-left: 55px;
+  row-gap: 10px;
+}
+
+.search-section {
+  display: flex;
+  width: 693px;
+  height: 64px;
+  margin: 0px 23px 12px 0px;
+  border-radius: 5px;
+  background-color: #fff;
+
+  .icon {
+      align-self: center;
+
+      svg {
+          margin: 9px 0 9px 0px;
+      }
+  }
+
+  .vip-btn {
+      width: 94px;
+      height: 42px;
+      padding: 12px 34px 11px;
+      border-radius: 5px;
+      margin: 11px 13px 11px 0;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.19;
+      letter-spacing: normal;
+      text-align: center;
+      color: #313131;
+      background: transparent;
+  }
+
+  .dispute-btn {
+      width: 94px;
+      height: 42px;
+      margin: 11px 0;
+      padding: 12px 14px 11px;
+      border-radius: 5px;
+      border: solid 1px #707070;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.19;
+      letter-spacing: normal;
+      text-align: center;
+      color: #313131;
+      background: transparent;
+
+  }
+
+  .support-btn {
+      width: 94px;
+      height: 42px;
+      margin: 11px 19px 11px 13px;
+      padding: 12px 11px 11px;
+      border-radius: 5px;
+      border: solid 1px #707070;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.19;
+      letter-spacing: normal;
+      text-align: center;
+      color: #313131;
+      background: transparent;
+
+  }
+}
+
+.footer {
+  z-index: 400;
+  position: relative;
+  margin: 1rem; 
+  textarea {
+      border-radius: 5px;
+      border: solid 1px #d6d6de;
+      background-color: #fff;
+      outline: none;
+      width: 830px;
+      height: 95px;
+      padding: 1rem 1.5rem;
+}
+}
+
+
+.menu {
+  display: grid;
+  align-items: end;
+  margin: 0;
+  justify-items: end;
+}
+
+.items {
+  width: 100px;
+  height: 447px;
+  display: grid;
+  background-color: #f3f3f6;
+  justify-items: center;
+  align-items: center;
+}
+
+.notifications {
+  position: relative;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+
+.support {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: center;
+  color: #313131;
+}
+
+
+.dispute {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f00;
+}
+
+.dispute-opacity {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f00;
+  opacity: 0.3;
+}
