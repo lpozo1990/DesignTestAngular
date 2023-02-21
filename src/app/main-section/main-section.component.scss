@@ -1,28 +1,65 @@
-:root {
-    --ideal-viewport-width: 1920;
-  }
-  
-  @function scaleValue($value) {
-    @return calc(
-      #{$value} * (clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width))
-    );
-  }
-  
-
-
 .container {
     width: 100%;
     display: grid;
-    height: calc(100vh - 90px);
-    grid-template-columns: 100px   1fr;
+    height: 858px;
+    grid-template-columns: 101px 1fr;
 
     .search-control {
-        height: 42px;
-        border-radius: 5px;
         outline: none;
-        padding: 4px 39px;
         border: 0;
+        width: 294px;
+        height: 42px;
+        box-sizing: border-box;
+        margin: 11px 14px 11px 15px;
+        padding: 9px 184px 9px 62px;
+        border-radius: 5px;
         background-color: #f3f3f6;
+    }
+
+    .side-menu {
+        height: 858px;
+        width: 100%;
+        margin: 0px 54px 0 0;
+        padding: 43.2px 29px 210.7px 29px;
+        object-fit: contain;
+        background-color: #fff;
+        box-sizing: border-box;
+
+        .place {
+            margin: 0 4px 43.5px 4px;
+        }
+
+        .card {
+            margin: 0px 4px 43.2px 4px;
+        }
+
+        .card2 {
+            margin: 0px 4px 43.5px 4px;
+        }
+
+        .box {
+            margin: 0px 4px 40.6px 4px;
+        }
+
+        .bitcoin {
+            margin: 0px 0 40.6px;
+        }
+
+        .box2 {
+            margin: 0 4px 43px 4px;
+        }
+
+        .pc {
+            margin: 0 4px 43px 4px;
+        }
+
+        .tasks {
+            margin: 0 4px 43px 4px;
+        }
+
+        .pc2 {
+            margin: 0 4px 0 4px;
+        }
     }
 
     .search-section-input {
@@ -32,13 +69,24 @@
 
     .search-icon {
         position: absolute;
-        top: 1rem;
-        left: 0.3rem;
+        top: 22px;
+        left: 30px;
+        margin: 0 17px 0 0;
     }
 
     .ticket {
-        height: 100%;
         position: relative;
+        margin: 0px;
+        width: 694px;
+
+        .ticket-header-terciary {
+            height: 35px;
+            border-radius: 5px;
+            background-color: #707070;
+            text-align: center;
+            z-index: 100;
+            position: relative;
+        }
     }
 
     .ticket-header {
@@ -49,16 +97,19 @@
     }
 
     .ticket-content {
-        
+
         box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.34);
         background-color: #fff;
         border-radius: 5px;
-        .info{
+
+        .info {
             padding: 1rem;
             justify-content: flex-start;
-            & > span{
+
+            &>span {
                 margin-right: -4rem;
             }
+
             & span:nth-child(2) {
                 margin: 0 auto;
             }
@@ -66,29 +117,81 @@
     }
 
     .ticket-content-secondary {
-        
         box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.34);
         border-radius: 5px;
         border: solid 2px #ffae00;
-        background-color: #f6f4f4;
+        background-color: #F7F7F7;
+
+        .info {
+            padding: 20px 30px;
+            box-sizing: border-box;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        hr {
+            margin: 0;
+        }
+
+        .body {
+            padding: 17px 30px 20px 30px;
+            box-sizing: border-box;
+            height: 138px;
+            display: grid;
+            row-gap: 10px;
+        }
     }
 
     .ticket-content-terciary {
-
-        
         box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.34);
         border-radius: 5px;
-        background-color: #ffffff69;
-        .info{
+        background-color: #d7d7d7;
+        .info {
             justify-content: flex-start;
-            & > span{
+
+            &>span {
                 margin-right: -4rem;
             }
+
             & span:nth-child(2) {
                 margin: 0 auto;
             }
         }
-        
+
+        .info {
+            padding: 20px 30px;
+            box-sizing: border-box;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        hr {
+            margin: 0;
+        }
+
+        .body {
+            padding: 17px 30px 20px 30px;
+            box-sizing: border-box;
+            height: 110px;
+            display: grid;
+            row-gap: 10px;
+        }
+
+
+
+    }
+
+    .gradient {
+        filter: blur(4px);
+        width: 100%;
+        height: 78px;
+        padding: 8.5px 0 0;
+        position: absolute;
+        top: 139px;
+        opacity: 0.9;
+        background-image: linear-gradient(to top, #d6d6d6 92%, #e4e4e4 33%, rgba(233, 233, 233, 0));
     }
 
     .info {
@@ -124,17 +227,25 @@
     }
 
     .conversation {
-        margin: 1rem 4rem 0rem 1rem;
+        display: grid;
+        grid-template-columns: 68px 734px;
+        align-items: center;
+        width: 802px;
+        height: 87px;
+        margin: 15px 37px 15px 20px;
         padding: 11px 9px 13px;
         border-radius: 5px;
         background-color: #707070;
-        display: grid;
-        grid-template-columns: 0.2fr 1fr;
-        align-items: center;
+        img{
+            width: 59px;
+            height: 59px;
+            margin: 2px 9px 2px 0;
+          }
+        
     }
 
     .conversation-light {
-        margin: 36px 24px 0px 71px;
+        margin: 0px 24px 0px 71px;
         padding: 11px 9px 13px;
         border-radius: 5px;
         background-color: #d6d6de;
@@ -163,18 +274,18 @@
     .footer {
         z-index: 400;
         position: relative;
-        margin: 1rem;
+        margin: 1rem; 
+        textarea {
+            border-radius: 5px;
+            border: solid 1px #d6d6de;
+            background-color: #fff;
+            outline: none;
+            width: 830px;
+            height: 95px;
+            padding: 1rem 1.5rem;
+    }
     }
 
-    .footer textarea {
-        width: 92%;
-        border-radius: 5px;
-        border: solid 1px #d6d6de;
-        background-color: #fff;
-        outline: none;
-        padding: 1rem 1.5rem;
-        height: 5rem;
-    }
 
     .menu {
         display: grid;
@@ -214,16 +325,6 @@
         color: #313131;
     }
 
-    .gradient {
-        filter: blur(13px);
-        width: 100%;
-        height: 37px;
-        padding: 8.5px 0 0;
-        position: absolute;
-        top: 181px;
-        opacity: 0.5;
-        background-image: linear-gradient(to top, #d6d6d6 92%, #e4e4e4 33%, rgba(233, 233, 233, 0));
-    }
 
     .dispute {
         font-family: Lato;
@@ -254,28 +355,29 @@
         border-radius: 10px;
         box-shadow: 0 23px 31px 0 rgba(0, 0, 0, 0.05);
         background-color: #fff;
-        .header{
+        height: 748px;
+
+        .content {
+            height: 496px;
+            overflow-y: scroll;
+        }
+
+        hr {
+            border: solid 1px #d7d7d7;
+            height: 0;
+        }
+
+        .header {
             display: flex;
-            padding: 20px 27px;
-            gap: 1rem;
-            & .ticket-detail{
-                    margin: 0 auto;
+            padding: 20px 20px;
+            & .ticket-detail {
+                margin: 0 171px 0 101px;
+                font-size: 16px;
             }
         }
     }
 
-    .chat .content {
-
-        height: 41rem;
-        overflow-y: scroll;
-    }
-
-    hr {
-        border: solid 1px #d7d7d7;
-        height: 0;
-    }
-
-    .line-end {
+    .chat .line-end {
         display: flex;
         justify-content: space-between;
     }
@@ -283,7 +385,7 @@
     .body {
         display: grid;
         padding: 1rem;
-        row-gap: 1.3rem;
+        row-gap: 10px;
     }
 
     .text-99 {
@@ -304,7 +406,6 @@
 
     .text-light {
         font-family: Lato;
-        font-size: 16px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
@@ -312,13 +413,13 @@
         letter-spacing: normal;
         text-align: left;
         color: #d6d6de;
+        margin-right: 31px;
     }
 
     .footer-icons {
         display: flex;
         justify-content: flex-end;
-        gap: 1rem;
-        margin-top: 1rem;
+        margin-top: 4px;
     }
 
     .text-dark {
@@ -334,39 +435,34 @@
     }
 
     .upload-icon {
+        width: 47px;
+        height: 47px;
+        margin: 0px 15px 0 56px;
         padding: 10px 8.3px 10.4px 9px;
         border-radius: 5px;
         background-color: #a7a7a7;
     }
 
     .send-icon {
-        padding: 7.3px 6.6px 3.3px 0px;
+        width: 47px;
+        height: 47px;
+        margin: 0px 0px 0 2px;
+        padding: 3.3px 6.6px 3.3px 0px;
         border-radius: 5px;
         background-color: #dddcdf;
     }
 
-    .side-menu {
-        display: grid;
-        background-color: #fff;
-        height: auto;
-        justify-items: center;
-        padding-top: 3.8rem;
-        gap: 54px;
-        grid-auto-rows: min-content;
-    }
-
     .main-content {
         display: grid;
-        grid-template-columns: 1fr 1fr 0.2fr;
-        column-gap: 2.3rem;
-        grid-template-rows: 120px 1fr;
+        grid-template-columns: 751px 870px 101px;
+        column-gap: 46.5px;
+        grid-template-rows: 84px 1fr;
         margin-bottom: 2rem;
         width: 100%;
     }
 
     .title {
         grid-column: span 3;
-        justify-self: center;
         align-self: center;
         font-family: Lato;
         font-size: 36px;
@@ -376,25 +472,89 @@
         line-height: 1.22;
         letter-spacing: normal;
         text-align: left;
+        margin: 0px 866px -1px 771px;
         color: #313131;
     }
 
     .tickets-details {
         display: grid;
-        grid-template-rows: 67px repeat(3, 1fr);
-        margin-left: 2rem;
-        row-gap: 1rem;
+        grid-template-rows: 67px 245px 204px 207px;
+        margin-left: 55px;
+        row-gap: 10px;
     }
 
     .search-section {
-        background-color: #fff;
-        padding: 11px 19px 11px 15px;
-        border-radius: 5px;
         display: flex;
-        gap: 0.8rem;
-        justify-content: space-around;
-        .icon{
+        width: 693px;
+        height: 64px;
+        margin: 0px 23px 12px 0px;
+        border-radius: 5px;
+        background-color: #fff;
+
+        .icon {
             align-self: center;
+
+            svg {
+                margin: 9px 0 9px 0px;
+            }
+        }
+
+        .vip-btn {
+            width: 94px;
+            height: 42px;
+            padding: 12px 34px 11px;
+            border-radius: 5px;
+            margin: 11px 13px 11px 0;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.19;
+            letter-spacing: normal;
+            text-align: center;
+            color: #313131;
+            background: transparent;
+        }
+
+        .dispute-btn {
+            width: 94px;
+            height: 42px;
+            margin: 11px 0;
+            padding: 12px 14px 11px;
+            border-radius: 5px;
+            border: solid 1px #707070;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.19;
+            letter-spacing: normal;
+            text-align: center;
+            color: #313131;
+            background: transparent;
+
+        }
+
+        .support-btn {
+            width: 94px;
+            height: 42px;
+            margin: 11px 19px 11px 13px;
+            padding: 12px 11px 11px;
+            border-radius: 5px;
+            border: solid 1px #707070;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.19;
+            letter-spacing: normal;
+            text-align: center;
+            color: #313131;
+            background: transparent;
+
         }
     }
 }

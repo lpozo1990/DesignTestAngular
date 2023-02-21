@@ -1,45 +1,62 @@
-:root {
-  --ideal-viewport-width: 1920;
-}
-
-@function scaleValue($value) {
-  @return calc(
-    #{$value} * (clamp(350px, 100vw, 3840px) / var(1920))
-  );
-}
-
-
-
 .nav {
-    width: auto;
-    display: grid;
-    height: scaleValue(90);
-    grid-template-columns: 4fr 1fr;
-    margin: 0;
-    padding: 23px 121px 22px 140px;
-    background-color: #313131;
-    align-items: center;
-    .icons {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        align-items: center;
-        .custom {
-            background-color: #fff;
-            border-radius: 33px;
-            padding: 0.5rem;
-          }
-      }
-    .CRM {
-        width: 43px;
-        height: 23px;
-        font-family: Lato;
-        font-size: 19px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.21;
-        letter-spacing: normal;
-        text-align: right;
-        color: #fff;
-      }
+  width: auto;
+  display: grid;
+  height: 90px;
+  grid-template-columns: 4fr 1fr;
+  margin: 0;
+  padding: 23px 121px 22px 140px;
+  background-color: #313131;
+  align-items: center;
+  box-sizing: border-box;
+
+  &__logo {
+    width: 123.8px;
+    height: 33.7px;
+    margin: 5px 1288.7px 6.3px 0;
   }
+
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+
+    .person {
+      border-radius: 33px;
+      width: 46px;
+      height: 45px;
+      margin: 0 30px 0 0;
+      padding: 7px 8.3px 8.6px 8.3px;
+      background-color: #fff;
+    }
+
+    .clamp {
+      border-radius: 33px;
+      width: 46px;
+      height: 45px;
+      margin: 0 19px 0 0px;
+      padding: 10px 11px 11px;
+      background-color: #fff;
+    }
+    .arrow{
+      width: 24px;
+      height: 24px;
+      margin: 10px 0 11px 0;
+    }
+
+    .CRM {
+      width: 43px;
+      height: 23px;
+      font-family: Lato;
+      margin: 11px 38.5px 11px 0;
+      font-size: 19px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.21;
+      letter-spacing: normal;
+      text-align: right;
+      color: #fff;
+    }
+  }
+
+}
